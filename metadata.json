@@ -1,0 +1,6 @@
+{
+  "name": "Smart Task Manager Pro – VietinBank CN Kiên Giang",
+  "description": "Hệ thống quản lý công việc và chỉ đạo điều hành thông minh dành cho VietinBank Chi nhánh Kiên Giang.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

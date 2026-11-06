@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --vtb-blue: #005993;
+    --vtb-blue-hover: #004777;
+    --vtb-blue-dark: #00375c;
+    --vtb-red: #D71249;
+    --vtb-red-hover: #b80c3b;
+    --vtb-light-blue: #7ED3F7;
+    --vtb-light-blue-bg: #EAF7FE;
+    --vtb-bg: #F7F9FC;
+    --vtb-surface: #FFFFFF;
+    --vtb-border: #E2E8F0;
+    --vtb-text-primary: #172B4D;
+    --vtb-text-secondary: #64748B;
+  }
+
+  body {
+    font-family: 'SVN-Gilroy', 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--vtb-bg);
+    color: var(--vtb-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbars for enterprise tables and Kanban columns */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print styling for professional bank executive reports */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .card-print {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    break-inside: avoid;
+  }
+}
